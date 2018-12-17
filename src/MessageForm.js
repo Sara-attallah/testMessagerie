@@ -52,11 +52,9 @@ class MessageForm extends Component {
   }
 
   handleCheckbox() {
-    console.log(this.state.isPrivate);
     this.setState({
       isPrivate: !this.state.isPrivate
     });
-    console.log(this.state.isPrivate);
   }
 
   handleSubmit(e) {

@@ -32,13 +32,11 @@ class MessageList extends Component {
   };
 
   render() {
-    console.log(this.props.messages);
     const { classes, messages } = this.props;
 
     return (
       <div className={classes.root}>
         {messages.map(mess => {
-          console.log(mess);
           return (
             <Grid
               key={mess.id}

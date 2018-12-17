@@ -52,8 +52,10 @@ class MessageList extends Component {
                   {mess.user}
                 </Typography>
 
-                <div className="message-text__container">
-                  <Typography className="message-text">{mess.text}</Typography>
+                <div>
+                  <Typography color={mess.isPrivate ? "secondary" : "default"}>
+                    {mess.text}
+                  </Typography>
                 </div>
               </Paper>
             </Grid>
